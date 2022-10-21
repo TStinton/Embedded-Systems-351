@@ -84,9 +84,14 @@ public:
     }
     bool operator==(DoubleNumber& u)
     {
+        this->setValue(u.getValue());
+        if (this - u = 0){
+            return true;
+        }else
         // Return a true if u is equal to `this`
         // ** TO BE DONE BY THE STUDENT **
         return false;
+        }
     }
 
     operator double() {
